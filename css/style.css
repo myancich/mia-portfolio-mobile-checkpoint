@@ -15,6 +15,12 @@ body {
 body.compost {
     background-image: url("/mia-portfolio/images/IMG_6383.jpeg");
     background-color: #f1f1f1;
+
+      /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -69,6 +75,16 @@ nav li a:link {
     text-decoration: none;
   }
 
+a.skip {
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+    visibility: hidden;
+}
   
 header p{
     color: white;
@@ -187,7 +203,7 @@ img:hover{
 
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -198,6 +214,9 @@ img:hover{
     margin: 10px;
 }
 
+.gallery a {
+    flex-wrap: wrap;
+}
 
 #logo{
     -webkit-animation: logo_grow;
