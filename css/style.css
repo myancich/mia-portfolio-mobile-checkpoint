@@ -83,7 +83,6 @@ a.skip {
     z-index: 1;
     position: absolute;
     left: -500px;
-    visibility: hidden;
 }
   
 header p{
