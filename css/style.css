@@ -1,0 +1,234 @@
+html {
+    font-size: medium;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    /*font-family: 'Graphik-Light',sans-serif; */
+    display: block;
+    background-image: url("/HW4-2022-main/images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+
+body.compost {
+    background-image: url("/mia-portfolio/images/IMG_6383.jpeg");
+    background-color: #f1f1f1;
+}
+
+
+.active{
+    background-color: lightseagreen;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: black wavy underline;
+}
+
+
+h1{
+    font-size: 30px;
+    margin: 12px 0;
+    display: block;
+    text-align: left;
+    width: auto;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer{
+    background-color: lightgreen;
+    padding: 32px 8px;
+}
+
+nav{
+    background-color: lightgreen;
+    padding: 25px 10px;
+}
+  
+nav a{
+    color: black;
+    font-weight: bold;
+}
+  
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav li{
+    margin: 10px;
+}
+
+nav li a:link {
+    text-decoration: none;
+  }
+
+  
+header p{
+    color: white;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+img {
+    margin: 0 auto;
+    width: 100px;
+}
+
+img:nth-child(even){
+    background-color: lightgreen;
+    margin: 12px;
+    width: 325px;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 15px;
+}
+
+img:nth-child(odd){
+    background-color: lightseagreen;
+    margin: 12px;
+    width: 325px;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 15px;
+}
+
+img:hover{
+   border: dashed; 
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    row-gap: 30px;
+}
+
+.method1,
+.method2,
+.method3,
+.method4,
+.method5,
+.method6,
+.method7,
+.method8,
+.method9 {
+    grid-column: 2 / span 1;
+}
+
+.method1-image,
+.method2-image,
+.method3-image,
+.method4-image,
+.method5-image,
+.method6-image,
+.method7-image,
+.method8-image,
+.method9-image {
+    grid-column: 1 / span 3;
+    max-height: 500px;
+    overflow: hidden;
+    z-index: .1;
+}
+
+.method1, .method1-image {
+    grid-row: 1 / span 1;
+}
+
+.method2, .method2-image {
+    grid-row: 2 / span 1;
+}
+
+.method3, .method3-image {
+    grid-row: 3 / span 1;
+}
+
+.method4, .method4-image {
+    grid-row: 4 / span 1;
+}
+
+.method5, .method5-image {
+    grid-row: 5 / span 1;
+}
+
+.method6, .method6-image {
+    grid-row: 6 / span 1;
+}
+
+.method7, .method7-image {
+    grid-row: 7 / span 1;
+}
+
+.method8, .method8-image {
+    grid-row: 8 / span 1;
+}
+
+.method9, .method9-image {
+    grid-row: 9 / span 1;
+}
+
+
+.text {
+    justify-self: left;
+    align-self: center;
+    max-height: 25vh;
+    overflow: scroll;
+    font-weight: bold;
+    background-color: lightgreen;
+  }
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.gallery img {
+    width: 100%;
+    margin: 10px;
+}
+
+
+#logo{
+    -webkit-animation: logo_grow;
+    animation-name: logo_grow;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+   }
+ 
+ @-webkit-keyframes logo_grow{
+     from {width: 25px; opacity: 0;}
+     to {width: 475px; opacity: 1;}
+   }  
+ 
+ @keyframes logo_grow{
+     from {width: 25px; opacity: 0;}
+     to {width: 475px; opacity: 1;}
+   }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+}
+
+i {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+#handshake {
+    color: black;
+}
